@@ -1,0 +1,120 @@
+/* css style for the body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background-image.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* css style for the background image*/
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* css style for the nav bar*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+/* css style for the nav bar to keep the name on the left*/
+.navbar-title {
+    margin-left: 20px;
+}
+/* css style for the nav bar to keep the link to the other pages*/
+.navbar-links {
+    margin-right: 20px;
+}
+/* css style for the nav bar for animation*/
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+/* css style for the nav bar for animation*/
+.navbar a:hover {
+    font-size: 17px;
+    color: rgb(97, 197, 255);
+}
+/* css style for the nav bar for active page*/
+.navbar a.active {
+    font-size: 17px;
+    color: rgb(97, 197, 255);
+}
+/* css style for the content of active page*/
+.content {
+    padding-top: 100px;
+    padding-right: 100px; 
+}
+/* css style for the round image*/
+.round-image {
+    border-radius: 60%; 
+    border: 2px solid #fff; 
+    max-width: 200px;
+}
+/* css style for the left content of active page*/
+.left-content {
+    float: left;
+    margin-right: 30px; 
+}
+/* css style for the right content of active page*/
+.right-content {
+    margin-left: 120px;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: left;
+    }
+/* css style for the mobile view*/
+@media (max-width: 768px) {
+    .navbar-links {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+            width: 100%;
+            text-align: left;
+            z-index: 1;
+        }
+    .content {
+            padding-top: 140px;
+        } 
+    .left-content {
+            margin-right: 100%;
+            max-width: 100%; 
+        }
+    .right-content {
+            margin-left: 30px;
+            width: 100%;
+        }
+}
+
+    
+    
+    
+    
+    
+    
